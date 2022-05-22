@@ -6,4 +6,4 @@ Nos arquivos contém o arquivo servidor.rar, nele contém as configurações nec
 pasta public. Com o Node instalado, execute no terminal, dentro da pasta servidor, a função "npm start". Para acessar a aplicação através do navegador, utilize o endereço 
 http://localhost:3000/principal.html. 
 
-<img align="center" alt="Victor-Js" width="1000" src=https://github.com/victorddantas/jogoDeDigitacao/blob/main/public/img/screen.png
+<img align="center" alt="Victor-Js" width="1000" src=https://github.com/victorddantas/jogoDeDigitacao/blob/main/public/img/screen.png>
