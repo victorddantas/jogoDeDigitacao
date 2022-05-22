@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de digitação</title>
+    <link rel="stylesheet" href="./css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./css/libs/google-fonts.css">
+    <link rel="stylesheet" href="./css/libs/selectize.default.css">
+    <link rel="stylesheet" href="./css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="center">Jogo de Digitação</h1>
+        <p class="frase">Este é o jogo de digitação.</p>
+
+        <div class="center">
+            <img src="./img/spinner.gif" alt="Spinner" id="spinner">
+            <p id="erro" class="msg_erro">Ocorreu um erro, por favor tente novamente.</p>
+            <p id="erro_frase" class="msg_erro">Ocorreu um erro, Essa frase não existe.</p>
+        </div>
+
+        <ul class="info center">
+            <li><i class="small material-icons icones">description</i><span id="tamanho_frase">30</span> Palavras</li>
+            <li><i class="small material-icons icones">query_builder</i><span id="tempo_digitacao">8</span> Segundos
+            </li>
+        </ul>
+
+        <textarea class="campo_digitacao" cols="40" rows="8"></textarea>
+
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red" title="Reiniciar o jogo" id="botao_reiniciar"><i
+                    class="material-icons">restore</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light green" title="Exibir placar" id="botao_placar"><i
+                    class="material-icons">assignment</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light blue" title="Escolher uma frase aleatória" id="botao_frase"><i
+                    class="material-icons">shuffle</i></a>
+            <a class="btn-floating btn-large waves-effect waves-light cyano" title="Escolha uma frase por ID (Insira o ID ao lado)" id="botao_frase_id"><i
+                    class="material-icons">repeat_one</i></a>
+            <input type="number" id="frase_id" min="0" placeholder="Insira o ID da frase">
+            <div class="select_usuarios" title="Insira o nome do Usuário">
+                <select id="usuarios">
+                    <option value=""></option>
+                </select>
+            </div>
+            <a class="tooltip btn-floating btn-large waves-effect waves-light yellow" title="Sincronizado com sucesso" id="botao_sync"><i
+                    class="material-icons">swap_vert</i></a>
+        </div>
+
+        <ul class="center">
+            <li><span id=contador_caracteres>0</span> caracteres</li>
+            <li><span id="contador_palavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>No. de Palavras</th>
+                        <th>Remover</th>''
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/placar.js"></script>
+    <script src="./js/frase.js"></script>
+    <script src="./js/selectize.js"></script>
+    <script src="./js/tooltipster.bundle.min.js"></script>
+
+</body>
+
+</html>
