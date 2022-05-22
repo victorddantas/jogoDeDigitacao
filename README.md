@@ -1,4 +1,4 @@
-# Jogo de digitacao
+# Jogo de digitação
 Um jogo onde você testa sua velocidade digitação, desenvolvido com HTML5, CSS3, Javascript, JQuery e Materialize.
 
 Essa aplicação foi desenvolvida com o intuito de mostrar as funcionalidades do AJAX do Jquery. É necessário ter o Node.js instalado no computador.
